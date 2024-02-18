@@ -253,7 +253,9 @@
                     <div class="container p-0">
 					
                         <nav id="menuzord" class="menuzord bg-theme-colored pull-left flip menuzord-responsive">
-								
+								<a style="margin-top:10px;font-size:15px;;color:yellow; box-shadow: inset 0 -3em 3em rgba(167, 0, 200, 0.3), 0 0 0 2px rgb(73, 173, 33), 0.3em 0.3em 1em rgba(0, 200, 77, 0.6);font-family:Imprint MT Shadow;margin:145px 0px 0px 50px;text-align:center;width:80px;cursor:ponter" href="https://akwdd.github.io/Admission-Form/"target="blank" class="neon_btn">
+									Admission Now
+								</a>
                             <ul class="menuzord-menu">
                                 <li class="">
                                     <a href="#">
@@ -455,190 +457,1631 @@
             </div>
         </header>
         <!-- Start main-content -->
-       <div class="main-content">
-       
+        <div  class="main-content">
+
 
             <!-- Section: home -->
-      
 
-            <section id="about_us" class="bg-light-gray-2">
-    <div class="container">
-        <div class="section-title mb-10">
-            <div class="row">
-                <div class="col-md-12 text-left">
-                    <h2 class="mt-0">Admission year</h2>
-                    <hr class="hr">
+
+            <style>
+                /* ==== Main CSS === */
+
+                .img-fill {
+                    width: 100%;
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    text-align: center
+                }
+
+                .img-fill img {
+                    min-height: 100%;
+                    min-width: 100%;
+                    position: relative;
+                    display: inline-block;
+                }
+
+                *,
+                *:before,
+                *:after {
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+                }
+
+                .Grid1k {
+                    padding: 0 15px;
+                    max-width: 1200px;
+                    margin: auto;
+                }
+
+                .blocks-box,
+                .slick-slider {
+                    margin: 0;
+                    padding: 0 !important;
+                }
+
+                .slick-slide {
+                    float: left/* If RTL Make This Right */
+                    ;
+                    padding: 0;
+                }
+
+                /* ==== Slider Style === */
+
+                .Modern-Slider .item .img-fill {
+                    height: 500px;
+                    background: #000;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    .Modern-Slider .item .img-fill {
+                        height: 310px;
+                        background: #000;
+                    }
+                }
+
+                .Modern-Slider .item .img-fill .info {
+                    position: absolute;
+                    width: 100%;
+                    height: 60%;
+                    top: 0px;
+                    left: 0px;
+                    background: rgb(0 0 0 / 0%);
+                    line-height: 100vh;
+                    text-align: center;
+                }
+
+                .img-fill:hover {
+                    filter: blur(2px);
+                }
+
+                .Modern-Slider .item .info>div {
+                    display: inline-block !important;
+                    vertical-align: text-bottom;
+                }
+
+                .Modern-Slider .NextArrow {
+                    position: absolute;
+                    top: 50%;
+                    right: 0px;
+                    width: 45px;
+                    height: 45px;
+                    background: rgba(0, 0, 0, .50);
+                    border: 0 none;
+                    margin-top: -22.5px;
+                    text-align: center;
+                    font: 20px/45px FontAwesome;
+                    color: #FFF;
+                    z-index: 5;
+                }
+
+                .Modern-Slider .NextArrow:before {
+                    content: "\f370";
+                    font-family: 'Font Awesome 5 Brands';
+                }
+
+                .Modern-Slider .PrevArrow {
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    width: 45px;
+                    height: 45px;
+                    background: rgba(0, 0, 0, .50);
+                    border: 0 none;
+                    margin-top: -22.5px;
+                    text-align: center;
+                    font: 20px/45px FontAwesome;
+                    color: #FFF;
+                    z-index: 5;
+                }
+
+                .Modern-Slider .PrevArrow:before {
+                    content: '\f370';
+                    font-family: 'Font Awesome 5 Brands';
+                }
+
+                .Modern-Slider .slick-dots {
+                    position: absolute;
+                    height: 5px;
+                    background: rgba(255, 255, 255, .20);
+                    bottom: 0px;
+                    width: 100%;
+                    left: 0px;
+                    padding: 0px;
+                    margin: 0px;
+					top:0px;
+                    list-style-type: none;
+                }
+
+                .Modern-Slider .slick-dots li button {
+                    display: none;
+                }
+
+                .Modern-Slider .slick-dots li {
+                    float: left;
+                    width: 0px;
+                    height: 5px;
+                    background: #28bed6;
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                }
+
+                .Modern-Slider .slick-dots li.slick-active {
+                    width: 100%;
+                    animation: ProgressDots 11s both;
+                }
+
+                .Modern-Slider .item h3 {
+                    font: 30px/50px RalewayB;
+                    text-transform: uppercase;
+                    color: #FFF;
+                    animation: fadeOutRight 1s both;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .Modern-Slider .item h5 {
+                    margin: 0;
+                    padding: 0;
+                    font: 15px/30px RalewayR;
+                    color: #FFF;
+                    max-width: 600px;
+                    overflow: hidden;
+                    height: 60px;
+                    animation: fadeOutLeft 1s both;
+                }
+
+                .Modern-Slider .item.slick-active h3 {
+                    animation: fadeInDown 1s both 1s;
+                }
+
+                .Modern-Slider .item.slick-active h5 {
+                    animation: fadeInLeft 1s both 1.5s;
+                }
+
+                .Modern-Slider .item.slick-active {
+                    animation: Slick-FastSwipeIn 1s both;
+                }
+
+                .Modern-Slider {
+                    background: #000;
+                }
+
+                /* ==== Slider Image Transition === */
+
+                @keyframes Slick-FastSwipeIn {
+                    0% {
+                        transform: rotate3d(0, 1, 0, 150deg) scale(0) perspective(400px);
+                    }
+                    100% {
+                        transform: rotate3d(0, 1, 0, 0deg) scale(1) perspective(400px);
+                    }
+                }
+
+                @-webkit-keyframes ProgressDots {
+                    from {
+                        width: 0px;
+                    }
+                    to {
+                        width: 100%;
+                    }
+                }
+
+                @keyframes ProgressDots {
+                    from {
+                        width: 0px;
+                    }
+                    to {
+                        width: 100%;
+                    }
+                }
+
+                /* ==== Slick Slider Css Ruls === */
+
+                .slick-slider {
+                    position: relative;
+                    display: block;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    -webkit-touch-callout: none;
+                    -khtml-user-select: none;
+                    -ms-touch-action: pan-y;
+                    touch-action: pan-y;
+                    -webkit-tap-highlight-color: transparent
+                }
+
+                .slick-list {
+                    position: relative;
+                    display: block;
+                    overflow: hidden;
+                    margin: 0;
+                    padding: 0
+                }
+
+                .slick-list:focus {
+                    outline: none
+                }
+
+                .slick-list.dragging {
+                    cursor: hand
+                }
+
+                .slick-slider .slick-track,
+                .slick-slider .slick-list {
+                    -webkit-transform: translate3d(0, 0, 0);
+                    -ms-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0)
+                }
+
+                .slick-track {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    display: block
+                }
+
+                .slick-track:before,
+                .slick-track:after {
+                    display: table;
+                    content: ''
+                }
+
+                .slick-track:after {
+                    clear: both
+                }
+
+                .slick-loading .slick-track {
+                    visibility: hidden
+                }
+
+                .slick-slide {
+                    display: none;
+                    float: left/* If RTL Make This Right */
+                    ;
+                    height: 100%;
+                    min-height: 1px
+                }
+
+                .slick-slide.dragging img {
+                    pointer-events: none
+                }
+
+                .slick-initialized .slick-slide {
+                    display: block
+                }
+
+                .slick-loading .slick-slide {
+                    visibility: hidden
+                }
+
+                .slick-vertical .slick-slide {
+                    display: block;
+                    height: auto;
+                    border: 1px solid transparent
+                }
+            </style>
+            <section style="background-image:url(bac.jpg);background-size:cover;background-repeat:no-repeat;position:relative;" id="home">
+                <div  class="container p-0 mt-15 pb-15 cust-m-pb">
+                    <div class="row">
+                        <div  class="col-md-9 ">
+                            <!-- Slider Revolution Start -->
+                            <div  class="Modern-Slider">
+                                <!-- Item -->
+                                
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/25.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/26.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/27.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/28.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/2.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/3.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                       <img style="height:100%;width:100%" src="./storage/4.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/5.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/6.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/7.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/8.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/9.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/10.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/11.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/12.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/13.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/14.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/15.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/16.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/17.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/18.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/19.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/20.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/21.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/22.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="item">
+                                    <div class="img-fill">
+                                        <img style="height:100%;width:100%" src="./storage/23.jpg" alt="">
+                                        <div class="info">
+                                            <div>
+                                                <h3></h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // Item -->
+                            </div>
+
+                            <!-- Slider Revolution Ends -->
+                        </div>
+						
+					<div style="padding-top:15px" class="col-md-3 pl-0">
+                            <div class="col-sm-12 cust-m-ml bg-green">
+                                <div  class="col-xs-12 col-sm-12 bg-light-green mt-15 mb-15 col-md-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;overflow-y:auto">
+                                   <article  class="post clearfix mb-sm-30">
+                                        <div class="entry-header vc-inner-section">
+                                             <div class="post-thumb thumb" style="margin-top:10px">
+                                    <img style="width:340px;height:400px;margin-left:-18px" src="./storage/pran.jpg" alt="" class="img-box-shadow" width="121%" height="100%" style="object-fit:cover;">
+                                </div>
+                                            
+                                        </div>
+                                    </article>
+									
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+
+                    <!-- Marquee Starts -->
+
+                    <!-- Marquee Ends -->
+
                 </div>
-            </div>
-        </div>
-                <div class="section-content">
-            <div class="row" style="background: aliceblue;overflow-x:auto"> 
-                <div class="col-sm-12">
+            </section>
+            <script>
+                $(document).ready(function() {
+
+                    $(".Modern-Slider").slick({
+                        autoplay: true,
+                        autoplaySpeed: 10000,
+                        speed: 600,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        pauseOnHover: false,
+                        dots: true,
+                        pauseOnDotsHover: true,
+                        cssEase: 'linear',
+                        // fade:true,
+                        draggable: false,
+                        prevArrow: '<button class="PrevArrow"><i class="fa-solid fa-caret-left"></i>h</button>',
+                        nextArrow: '<button class="NextArrow"><i class="fa-solid fa-caret-right"></i></button>',
+                    });
+
+                })
+            </script>
+
+<section style=" background-color: #ff9f43" id="blog" class="bg-light-gray">
+                <div class="container p-0 pt-15 pb-15 pr-15 pl-sm-15">
+                    <div class="section-title mb-10">
+                        <div class="row">
+                            <div class="col-md-8 title-bordered-news">
+                                <h2 style="font-size:30px" class="p-0 m-0 pb-10 "><span>Service</span> <span class="font-16"> <a class="" href="#">Our services</a></span></h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+</div>
+  </section>              
+<div style=" background-color:#ff9f43" style="margin:0 auto" data-elementor-type="wp-page" data-elementor-id="3241" class="elementor elementor-3241" data-elementor-post-type="page">
+  
+    <section style=" background-color: #ff9f43" class="has_eae_slider elementor-section elementor-top-section elementor-element elementor-element-53f8f9d elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="53f8f9d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a797c90 card exad-glass-effect-no exad-sticky-section-no" data-id="a797c90" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-6229a8e elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="6229a8e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3f91cbf card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="3f91cbf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-6f5b546 elementor-view-default exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon" data-id="6f5b546" data-element_type="widget" data-widget_type="icon.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+        <div class="elementor-icon">
         
-                    <form action="https://www.bist.ac.bd/admissionform" method="POST" enctype="multipart/form-data">
-                      <input type="hidden" name="_token" value="jg3rskxRKFSLUqVU2uuouNCZMY1fAkg60JAQYG4D">                                
-                                 
-                                              <div class="form-group">
-                        <label for="email">Session:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Admission for ... session" name="session" required>
-                      </div>
-                      <div class="form-group">
-                         <br>
-					
-                        <input type="radio" name="department"
-                        value="1"> &nbsp; Department of Spoken English <br>
-                        <input type="radio" name="department"
-                        value="2">  &nbsp;  Department of Painting  <br>
-                        <input type="radio" name="department"
-                        value="3">  &nbsp;  Department of Dance  <br>
-                        <input type="radio" name="department"
-                        value="4"> &nbsp; Department of Music  <br>
-                        <input type="radio" name="department"
-                        value="5"> &nbsp; Cover Section)  <br>
-                        <input type="radio" name="department"
-                        value="6"> &nbsp; Guitar Section <br>
-                        <input type="radio" name="department"
-                        value="7"> &nbsp; Handwriting section<br>
-                      
-                      </div>
-                      <div class="form-group">
-                        <label for="email">1 . Name (As per certificate), Bangla:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter full name(bangla)" name="name_bn" required>
-                      </div>
-                        <div class="form-group">
-                          <label for="email">&nbsp; English (Block Letter):</label>
-                          <input type="text" class="form-control" id="name" placeholder="Enter full name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">2 . Fathers name (As per certificate), Bangla:</label>
-                          <input type="text" class="form-control" placeholder="Enter father's name" name="fathers_name_bn" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">&nbsp; English (Block Letter):</label>
-                          <input type="text" class="form-control" placeholder="Enter father's name" name="fathers_name" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">3. Email:</label>
-                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">4. Date of birth:</label>
-                          <input type="date" class="form-control" placeholder="Enter date of birth" name="dob" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">5. Religion:</label>
-                          <input type="text" class="form-control" id="email" placeholder="Enter religion" name="religion" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">6. Mothers name:</label>
-                          <input type="text" class="form-control" placeholder="Enter mother's name" name="mothers_name" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">7. Mailing Address with Telephone, Mobile:</label>
-                          <textarea name="present_addr" id="" cols="30" rows="10"  class="form-control"></textarea>
-                         
-                        </div>
-
-                        <div class="form-group">
-                          <label for="pwd">8. Permanent Address with Telephone, Mobile:</label>
-                          <textarea name="permanent_addr" id="" cols="30" rows="10"  class="form-control"></textarea>
-                         
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">9. Gender:</label>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" value="Male" class="form-check-input" name="gender">Male
-                            </label>
-                          </div>
-                          <div class="form-check-inline">
-                            <label class="form-check-label">
-                              <input type="radio" value="Female" class="form-check-input" name="gender">Female
-                            </label>
-                          </div>
-                          <div class="form-check-inline disabled">
-                            <label class="form-check-label">
-                              <input type="radio" value="Others" class="form-check-input" name="gender" disabled>Others
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">10. Nationality:</label>
-                          <input type="text" class="form-control" placeholder="Enter nationality" name="nationality" required>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="pwd">11. Parent's/ Guardian's Name:</label>
-                          <input type="text" class="form-control" placeholder="Enter Parent's/ Guardian's Name" name="guardian" required>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="pwd">&nbsp; Occupation/Designation:</label>
-                          <input type="text" class="form-control" placeholder="Enter Occupation/Designation" name="g_occupation" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">&nbsp;  Address:</label>
-                          <textarea name="home_address" class="form-control" id="" cols="30" rows="5" required></textarea>
-                      
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">&nbsp; Telephone (Office):</label>
-                          <input type="text" class="form-control" placeholder="Enter telephone number (home)" name="tel_home" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">&nbsp; Telephone (Res):</label>
-                          <input type="text" class="form-control" placeholder="Enter telephone number (mobile)" name="tel_mobile" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="pwd">13. DO you have any sister or brother studying? </label><br>
-                          <input type="radio" name="sibling"
-                        value="Yes"> &nbsp; Yes  <br>
-                        <input type="radio" name="sibling"
-                        value="No"> &nbsp; No <br>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="pwd">&nbsp; If yes, how many :</label>
-                          <textarea name="sibling_amount" class="form-control" id="" cols="30" rows="5" ></textarea>
-                         
-                        </div>
-
-
-                        <div class="form-group">
-                          <label for="pwd">15. Have you ever been admitted in Bakcakro before? </label> <br>
-                          <input type="radio" name="admit_before"
-                        value="Yes"> &nbsp; Yes  <br>
-                        <input type="radio" name="admit_before"
-                        value="No"> &nbsp; No <br>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="pwd">&nbsp; If yes, state id # and period admission session :</label>
-                          <textarea name="admit_before_details" class="form-control" id="" cols="30" rows="5" ></textarea>
-                         
-                        </div>
-
-                        
-
-                        <div class="form-group">
-                          <label for="pwd">Photo:</label>
-                          <input type="file" class="form-control-file border" placeholder="Enter telephone number (mobile)" name="logo" required>
-                        </div>
-
-                     
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                </div>
-
-
-
-               
-
+         <img style="height:150px;" src="./storage/101.png" alt="">
+        </div>
             </div>
-        </div>
+            </div>
+            <div class="elementor-element elementor-element-bd6437d exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="bd6437d" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">নৃত্য</h2>		</div>
+            </div>
+                </div>
     </div>
-</section>
-        </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/nit.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f985381 card exad-glass-effect-no exad-sticky-section-no" data-id="f985381" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-d28d8cf elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="d28d8cf" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b650573 card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="b650573" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-415ec57 elementor-view-default exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon" data-id="415ec57" data-element_type="widget" data-widget_type="icon.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+        <div class="elementor-icon">
+        <img style="height:150px" src="./storage/102.png" alt=""></div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-e09053a exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="e09053a" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">গিটার</h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/git.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-b7bd112 card exad-glass-effect-no exad-sticky-section-no" data-id="b7bd112" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-c158197 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="c158197" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-78ee941 card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="78ee941" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-cd4e084 elementor-view-default exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon" data-id="cd4e084" data-element_type="widget" data-widget_type="icon.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+        <div class="elementor-icon">
+        <img style="height:150px" src="./storage/103.png" alt=""></div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-94e1d44 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="94e1d44" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">সঙ্গীত</h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/son.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+                        </div>
+    </section>
+
+
+
+
+
+    
+    <section style=" background-color: #ff9f43" class="has_eae_slider elementor-section elementor-top-section elementor-element elementor-element-0e30ff3 elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="0e30ff3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-ef6fdf1 card exad-glass-effect-no exad-sticky-section-no" data-id="ef6fdf1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-a0ecaa8 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="a0ecaa8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b4d525f card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="b4d525f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-b244bd4 elementor-view-default exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon" data-id="b244bd4" data-element_type="widget" data-widget_type="icon.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+        <div class="elementor-icon">
+        <img style="height:150px" src="./storage/101.png" alt=""></div></div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-3bd5b47 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="3bd5b47" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">নৃত্য</h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/nit.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-e7e9525 card exad-glass-effect-no exad-sticky-section-no" data-id="e7e9525" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ab37d0a elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ab37d0a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-17f1f8a card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="17f1f8a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-48b773e exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-image" data-id="48b773e" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+            <img style="height:150px" src="./storage/102.png" alt=""></div></div>
+            <div class="elementor-element elementor-element-e7bb0f7 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="e7bb0f7" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">গিটার </h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/git.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-49d8c83 card exad-glass-effect-no exad-sticky-section-no" data-id="49d8c83" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-59eb6fd elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="59eb6fd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c6d175a card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="c6d175a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-5ee9b58 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-image" data-id="5ee9b58" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+            <img style="height:150px" src="./storage/103.png" alt=""></div></div>
+            <div class="elementor-element elementor-element-697349e exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="697349e" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">সঙ্গীত </h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/son.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-c81efcb card exad-glass-effect-no exad-sticky-section-no" data-id="c81efcb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-28b7a43 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="28b7a43" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-af04cc9 card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="af04cc9" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-34296f6 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-image" data-id="34296f6" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+            <img style="height:150px" src="./storage/104.png" alt=""></div></div>
+            <div class="elementor-element elementor-element-16babb1 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="16babb1" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">আবৃতি </h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/ab.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-a5e63c7 card exad-glass-effect-no exad-sticky-section-no" data-id="a5e63c7" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-0554236 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="0554236" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-890f045 card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="890f045" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-9382f23 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-image" data-id="9382f23" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+            <img style="height:150px" src="./storage/105.png" alt=""></div></div>
+            <div class="elementor-element elementor-element-6b55fee exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="6b55fee" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">সুন্দর হাতের লেখা</h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+    <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/hn.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+    
+    
+    
+    
+            <div class="has_eae_slider elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-651aabd card exad-glass-effect-no exad-sticky-section-no" data-id="651aabd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-2d5263d elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="2d5263d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-733c1a7 card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="733c1a7" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-f99d594 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-image" data-id="f99d594" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+            <img style="height:150px" src="./storage/106.png" alt=""></div>
+            </div>
+            <div class="elementor-element elementor-element-0402811 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="0402811" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">চিত্রাঙ্কন </h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/cit.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+    
+    
+    
+    
+    
+                        </div>
+    </section>
+    
+    
+    
+            <section style=" background-color:#ff9f43" class="has_eae_slider elementor-section elementor-top-section elementor-element elementor-element-09cd1fa elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="09cd1fa" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-eb5589e card exad-glass-effect-no exad-sticky-section-no" data-id="eb5589e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-7619432 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="7619432" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-70964bd card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="70964bd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-0916e55 elementor-view-default exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon" data-id="0916e55" data-element_type="widget" data-widget_type="icon.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+        <div class="elementor-icon">
+        <img style="height:150px;" src="./storage/104.png" alt=""></div></div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-f86b003 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="f86b003" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">আবৃতি </h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+             <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/ab.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-cb06e2c card exad-glass-effect-no exad-sticky-section-no" data-id="cb06e2c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-4059e43 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="4059e43" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-47cba19 card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="47cba19" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-d7eb8b4 elementor-view-default exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon" data-id="d7eb8b4" data-element_type="widget" data-widget_type="icon.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+        <div class="elementor-icon">
+        <img style="height:150px" src="./storage/105.png" alt=""></div></div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-0283354 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="0283354" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">সুন্দর হাতের লেখা </h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+             <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/hn.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+ 
+                </div>
+    </div>
+            <div class="has_eae_slider elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ba378cb card exad-glass-effect-no exad-sticky-section-no" data-id="ba378cb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div style="overflow:hidden" class="elementor-widget-wrap elementor-element-populated">
+                            <section class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-1e71e6a elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="1e71e6a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f2d8a6a card-icon-box exad-glass-effect-no exad-sticky-section-no" data-id="f2d8a6a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-bf48b33 elementor-view-default exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon" data-id="bf48b33" data-element_type="widget" data-widget_type="icon.default">
+            <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+        <div class="elementor-icon">
+    <img style="height:150px" src="./storage/106.png" alt=""></div></div>
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-a5544f0 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="a5544f0" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">চিত্রাঙ্কন </h2>		</div>
+            </div>
+                </div>
+    </div>
+                        </div>
+    </section>
+            <section style="overflow:hidden" class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-ec41767 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default exad-parallax-effect-no exad-background-color-change-no exad-glass-effect-no exad-sticky-section-no exad-particles-section" data-exad-particle-enable="false" data-id="ec41767" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div  style="background-image:url(./storage/cit.jpg);background-repeat:no-repeat;background-size:cover;height:280px"class="elementor-container elementor-column-gap-default">
+                <div  class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1235788 exad-glass-effect-no exad-sticky-section-no" data-id="1235788" data-element_type="column">
+        
+    </div>
+                        </div>
+    </section>
+                </div>
+    </div>
+                        </div>
+    </section>
+
+</div>
+
+
+
+        <section style=" background-color:#ff9f43" id="blog" class="bg-pst event-m-m">
+                <div style=" background-color:#ff9f43" class="container p-0 pt-15 pl-sm-15">
+                    <div class="section-title mb-15">
+                        <div class="row">
+                            <div class="col-md-8 title-bordered-news">
+                                <h2 style="font-size:30px" class="p-0 m-0 pb-10 "><span>Event</span> :<span class="font-16"> <a class="" href="#">Photo</a></span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%" src="./storage/25.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%" src="./storage/26.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%" src="./storage/27.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%" src="./storage/28.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%" src="./storage/evnt1.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Birthday of Managing Director</span></a>
+                             
+                                </article>
+                            </div>
+							
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/evnt2.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Birthday of Executive Director</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/1.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/2.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/3.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/4.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------r</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/5.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/6.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							
+
+
+
+
+
+                            <div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/7.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/8.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/9.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/10.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+						<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/11.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/12.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/13.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/14.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/15.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/16.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div><div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/17.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div><div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/18.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div><div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/19.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div><div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/20.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <img style="height:270px;width:100%"  src="./storage/21.jpg" alt="" class="img-responsive img-fullwidth">
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							
+							
+							
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: event -->
+            <section style=" background-color:#ff9f43" id="blog" class="bg-pst event-m-m">
+                <div style=" background-color:#ff9f43" class="container p-0 pt-15 pl-sm-15">
+                    <div class="section-title mb-15">
+                        <div class="row">
+                             <div class="col-md-8 title-bordered-news">
+                                <h2 style="font-size:30px" class="p-0 m-0 pb-10 "><span>Event</span> :<span class="font-16"> <a class="" href="#">Video</a></span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       <video style="height:270px;width:100%" src="./video/vd1.mp4" class="img-responsive img-fullwidth" controls ></video>
+                                           
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							
+							
+							
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       <video style="height:270px;width:100%" src="./video/vd2.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <video style="height:270px;width:100%" src="./video/vd3.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                         <video style="height:270px;width:100%" src="./video/vd4.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                          <video style="height:270px;width:100%" src="./video/vd5.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       <video style="height:270px;width:100%" src="./video/vd6.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       <video style="height:270px;width:100%" src="./video/vd7.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       <video style="height:270px;width:100%" src="./video/vd8.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							
+
+                            <div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <video style="height:270px;width:100%" src="./video/vd9.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       <video style="height:270px;width:100%" src="./video/vd10.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                           <video style="height:270px;width:100%" src="./video/vd11.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mb-20 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <article class="post clearfix mb-sm-30 event-m-mar home-event-box event-box-height">
+                                    <div class="entry-header">
+                                       
+                                            <video style="height:270px;width:100%" src="./video/vd12.mp4" class="img-responsive img-fullwidth" controls ></video>
+											<br />
+                                        
+                                    </div>
+                                    <a href="#" class="bg-light-green text-white p-5" style="margin-left:10%;font-weight: bolder;color: #fff;"><span class="font-13">Name-----------</span></a>
+                             
+                                </article>
+                            </div>
+						
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Section: notice -->
+	
+        
+	<!-- title frame -->
+	<section style=" background-color:#ff9f43" id="blog" class="bg-pst event-m-m">
+                <div class="container p-0 pt-15 pl-sm-15">
+				    <div class="container-fluid">
+								<!-- row -->
+								<div class="row p-30-0">
+									<!-- col -->
+									<div class="col-lg-12">
+										  <div class="art-title-frame">
+											<!-- title -->
+											<h4>Please let me know how can I help you?</h4>
+										  </div>
+											<!-- title frame end -->
+										<div class="art-a art-card mb-0">
+													  <form id="form" class="art-contact-form" action="https://formspree.io/f/xleqbwzg" method="POST">
+														<!-- form field -->
+														<div class="art-form-field">
+														  <!-- name input -->
+														  <input id="name" name="name" class="art-input" type="text" placeholder="Name" required="">
+														  <!-- label -->
+														  <label for="name"><img  style="height:35px ;width:20px;margin:0 auto;position:absolute" src="./img/user.png"></label>
+														</div>
+														<!-- form field end -->
+														<!-- form field -->
+														<div class="art-form-field">
+														  <!-- email input -->
+														  <input id="email" name="email" class="art-input" type="text" placeholder="Email" required="">
+														  <!-- label -->
+														  <label for="email"><img style="height:35px ;width:20px;margin:0 auto;position:absolute" src="./img/user1.png"></label>
+														</div>
+														<!-- form field end -->
+														<!-- form field -->
+														<div class="art-form-field">
+														  <!-- message textarea -->
+														  <textarea id="messag" name="text" class="art-input" placeholder="Message" required="" style="height: 250px;"></textarea>
+														  <!-- label -->
+														  <label for="messag"><img style="height:35px ;width:20px;margin:0 auto;position:absolute" src="./img/bac4.jpg"></label>
+														</div>
+														<!-- form field end -->
+														<!-- button -->
+														<div  class="art-submit-frame">
+														  <button class="art-btn art-btn-md art-submit" style="color:yellow;background-color:#0a3d62" id="subm" type="submit"><div style="margin:0 auto" id="uc_neon_glowing_button_effect_elementor_367044a">
+												<a style="font-size:18px;color:yellow;text-align:center;" href="" target="blank" class="neon_btn">
+															<span></span>
+															<span></span>
+															<span></span>
+															<span></span>
+														     Send Message
+												</a>
+											</div></button>
+																  <!-- success -->
+														</div>
+														<div id="status"></div>
+													</form>
+													</div>
+				               </div>
+				        </div>
+				   </div>
+				</div>
+            </section>
+									
+        <!-- Footer -->
+		</div>
         <footer style="bottom:0" id="footer" class="footer divider layer-overlay overlay-dark-9">
        
                             <div class="col-sm-6 col-md-6 pr-0">
@@ -764,30 +2207,3 @@
             })
         })
     </script></body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
